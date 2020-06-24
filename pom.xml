@@ -28,6 +28,18 @@
         <version>2.3.3</version>
         <scope>provided</scope>
     </dependency>
+    <!--Simple Logging Facade for Java-->
+    <!--实现对多种日志框架的兼容-->
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-log4j12</artifactId>
+        <version>1.7.28</version>
+    </dependency>
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.8</version>
+    </dependency>
 
 
 </dependencies>
@@ -54,7 +66,6 @@
                         <path>/${project.artifactId}</path>
                     </configuration>
                 </plugin>
-
             </plugins>
         </pluginManagement>
     </build>
