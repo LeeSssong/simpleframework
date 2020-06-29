@@ -3,6 +3,7 @@ package com.lss.service.solo.impl;
 import com.lss.entity.bo.HeadLine;
 import com.lss.entity.dto.Result;
 import com.lss.service.solo.HeadLineService;
+import org.simpleframework.core.annotation.Service;
 
 import java.util.List;
 
@@ -10,6 +11,7 @@ import java.util.List;
  * @authonr: LeeSongsheng
  * @create: 2020/06/24
  **/
+@Service
 public class HeadLineServiceImpl implements HeadLineService {
     @Override
     public Result<Boolean> addHeadLine(HeadLine headLine) {

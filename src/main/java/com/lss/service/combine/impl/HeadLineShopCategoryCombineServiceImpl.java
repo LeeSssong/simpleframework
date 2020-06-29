@@ -7,6 +7,9 @@ import com.lss.entity.dto.Result;
 import com.lss.service.combine.HeadLineShopCategoryCombineService;
 import com.lss.service.solo.HeadLineService;
 import com.lss.service.solo.ShopCategoryService;
+import org.simpleframework.core.annotation.Autowired;
+import org.simpleframework.core.annotation.Controller;
+import org.simpleframework.core.annotation.Service;
 
 import java.util.List;
 
@@ -14,8 +17,11 @@ import java.util.List;
  * @authonr: LeeSongsheng
  * @create: 2020/06/24
  **/
+@Service
 public class HeadLineShopCategoryCombineServiceImpl implements HeadLineShopCategoryCombineService {
+    @Autowired
     private HeadLineService headLineService;
+    @Autowired
     private ShopCategoryService shopCategoryService;
 
     /**

@@ -19,6 +19,17 @@ import java.io.IOException;
 @Slf4j
 @WebServlet("/hello")
 public class HelloServlet extends HttpServlet {
+    //只会被执行一次，即初始化后会一直存在于容器当中
+    @Override
+    public void init() {
+        System.out.println("初始化 Servlet...");
+    }
+
+    @Override
+    protected void service (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("doGet 入口");
+        doGet(request, response);
+    }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -26,7 +37,10 @@ public class HelloServlet extends HttpServlet {
         log.debug("name is " + name);
         request.setAttribute("name", name);
         request.getRequestDispatcher("/WEB-INF/jsp/hello.jsp").forward(request, response);
+    }
 
-
+    @Override
+    public void destroy() {
+        System.out.println("Destroy...");
     }
 }
