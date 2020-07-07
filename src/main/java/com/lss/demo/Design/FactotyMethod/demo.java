@@ -7,11 +7,7 @@ package com.lss.demo.Design.FactotyMethod;
  **/
 public class demo {
     public static void main(String[] args) {
-        Factory factory = new Factory() {
-            @Override
-            public Product factoryMethod() {
-                return null;
-            }
-        };
+        Factory factory = new ConcreteFactory();
+        factory.doSomething();
     }
 }
