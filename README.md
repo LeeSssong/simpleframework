@@ -269,7 +269,7 @@ Spring 官网列出的 Spring 的 6 个特征:
 
 IoC（Inverse of Control:控制反转）是一种**设计思想**，就是 **传统的工程设计中，顶上的模块要依赖于底层模块，也就是底层模块决定上层建筑。控制反转就是上层建筑需要什么，就去底层找对应的模块，这样模块之间的耦合度会更加宽松**  
 
-![](D:\study\Career\project\img\依赖注入.jpg)
+![](https://github.com/LeeSssong/simpleframework/blob/master/img/%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5.jpg)
 
 ![](D:\study\Career\project\img\依赖注入实现控制反转.jpg)
 
