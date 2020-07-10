@@ -271,7 +271,7 @@ IoC（Inverse of Control:控制反转）是一种**设计思想**，就是 **传
 
 ![](https://github.com/LeeSssong/simpleframework/blob/master/img/%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5.jpg)
 
-![](D:\study\Career\project\img\依赖注入实现控制反转.jpg)
+![](https://github.com/LeeSssong/simpleframework/blob/master/img/%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E5%AE%9E%E7%8E%B0%E6%8E%A7%E5%88%B6%E5%8F%8D%E8%BD%AC.jpg)
 
 IoC 在其他语言中也有应用，并非 Spirng 特有。 **IoC 容器是 Spring 用来实现 IoC 的载体，  IoC 容器实际上就是个Map（key，value）,Map 中存放的是各种对象。**
 
@@ -281,7 +281,7 @@ Spring 时代我们一般通过 XML 文件来配置 Bean，后来开发人员觉
 
 ##### 初始化
 
-![](D:\study\Career\project\img\springIoC初始化.PNG)
+![](https://github.com/LeeSssong/simpleframework/blob/master/img/springIoC%E5%88%9D%E5%A7%8B%E5%8C%96.PNG)
 
 #### AOP
 
@@ -289,7 +289,7 @@ AOP(Aspect-Oriented Programming:面向切面编程)能够将那些与业务无�
 
 **Spring AOP就是基于动态代理的**，如果要代理的对象，实现了某个接口，那么Spring AOP会使用**JDK Proxy**，去创建代理对象，而对于没有实现接口的对象，就无法使用 JDK Proxy 去进行代理了，这时候Spring AOP会使用**Cglib** ，这时候Spring AOP会使用 **Cglib** 生成一个被代理对象的子类来作为代理，如下图所示：
 
-![](D:\study\Career\project\img\两种动态代理.PNG)
+![](https://github.com/LeeSssong/simpleframework/blob/master/img/%E4%B8%A4%E7%A7%8D%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86.PNG)
 
 使用 AOP 之后我们可以把一些通用功能抽象出来，在需要用到的地方直接使用即可，这样大大简化了代码量。我们需要增加新功能时也方便，这样也提高了系统扩展性。日志功能、事务管理等等场景都用到了 AOP 。
 
@@ -351,15 +351,15 @@ Spring AOP 已经集成了 AspectJ  ，AspectJ  应该算的上是 Java 生态�
 * 当要销毁 Bean 的时候，如果 Bean 在配置文件中的定义包含 destroy-method 属性，执行指定的方法。
 
 
-![](D:\study\Career\project\img\Bean的生命周期.PNG)
+![](https://github.com/LeeSssong/simpleframework/blob/master/img/Bean%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.PNG)
 
 #### 说说自己对于 Spring MVC 了解?
 
 MVC 是一种设计模式,Spring MVC 是一款很优秀的 MVC 框架。Spring MVC 可以帮助我们进行更简洁的Web层的开发，并且它天生与 Spring 框架集成。Spring MVC 下我们一般把后端项目分为 Service层（处理业务）、Dao层（数据库操作）、Entity层（实体类）、Controller层(控制层，返回数据给前台页面)。
 
-![](D:\study\Career\project\img\MVC工作流程.PNG)
+![](https://github.com/LeeSssong/simpleframework/blob/master/img/MVC%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B.PNG)
 
-![](D:\study\Career\project\img\MVC工作流程2.PNG)
+![](https://github.com/LeeSssong/simpleframework/blob/master/img/MVC%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B2.PNG)
 
 Spring MVC 的入口函数也就是前端控制器 `DispatcherServlet` 的作用是接收请求，响应结果。
 
